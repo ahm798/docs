@@ -434,9 +434,13 @@ Supported: organizations, organization-groups (writers, admins)
 |--------|----------|----------|----------|
 | GET | `/users/{sub}` | HIGH | User Details |
 | GET | `/users/search?email={email}` | MEDIUM | User Search |
-| PUT | `/users/{sub}` | MEDIUM | Update User |
-| GET | `/organizations/{id}/members` | HIGH | Org Members List |
+| PUT | `/users/{sub}` | HIGH | Update User |
+| PUT | `/users/{sub}/status` | HIGH | Update User Status |
+| GET | `/users/authorities` | HIGH | Authorities Dropdown |
+| GET | `/organizations/{id}/roles` | HIGH | Organization Roles |
+| GET | `/organizations/{id}/members` | HIGH | Org Members with User Info |
 | GET | `/organizations/{id}/units` | HIGH | Org Units List |
+| GET | `/organizations/{id}/divisions` | HIGH | Owner Divisions Dropdown |
 
 ---
 
