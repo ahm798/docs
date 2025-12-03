@@ -1,4 +1,4 @@
-# Gov360 Backend API Analysis Report
+# Gov360 Backend API Gap Analysis Report
 
 ## Executive Summary
 
@@ -125,8 +125,8 @@ This report provides a comprehensive analysis of existing backend endpoints and 
 | Method | Endpoint | Status | Description | Priority |
 |--------|----------|--------|-------------|----------|
 | GET | `/perspectives/{id}` | ❌ Missing | List all goals, indecators, intiatives and risk  | HIGH |
-| GET | `/perspectives/{id}/indicators` | ✅ Implemented | Get child indicators |
-| GET | `/perspectives/{id}/risk` | ✅ Implemented | Get  risk |
+| GET | `/perspectives/{id}/indicators` | ❌ Missing | Get child indicators |
+| GET | `/perspectives/{id}/risk` | ❌ Missing | Get  risk |
 
 
 
