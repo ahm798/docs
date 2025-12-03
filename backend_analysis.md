@@ -1,4 +1,4 @@
-# Gov360 Backend API Gap Analysis Report
+# Gov360 Backend API  Analysis Report
 
 ## Executive Summary
 
@@ -31,38 +31,6 @@ This report provides a comprehensive analysis of existing backend endpoints and 
 | PUT | `/strategies/{id}` | ✅ Implemented | Full update strategy |
 | PATCH | `/strategies/{id}` | ✅ Implemented | Partial update strategy |
 | DELETE | `/strategies/{id}` | ✅ Implemented | Soft delete strategy |
-
-**Request Example (Create Strategy)**:
-```http
-POST /api/strategic-performance/strategies
-Content-Type: application/json
-
-{
-  "name": {
-    "ar": "الاستراتيجية الوطنية للصحة 2025-2030",
-    "en": "National Health Strategy 2025-2030"
-  },
-  "description": {
-    "ar": "وصف الاستراتيجية",
-    "en": "Strategy description"
-  },
-  "vision": {
-    "ar": "رؤية صحية شاملة",
-    "en": "Comprehensive healthcare vision"
-  },
-  "startDate": "2025-01-01",
-  "endDate": "2030-12-31",
-  "plannedBudget": {
-    "currency": "SAR",
-    "amount": 5000000000.00
-  },
-  "allocatedBudget": {
-    "currency": "SAR",
-    "amount": 4800000000.00
-  },
-  "workflowStatus": "DRAFT"
-}
-```
 
 ---
 
