@@ -1,14 +1,25 @@
-# Gov360 Backend API  Analysis Report
+# Gov360 Backend API Analysis Report
 
 ## Executive Summary
 
 This report provides a comprehensive analysis of existing backend endpoints and identifies missing endpoints required for complete Strategic Performance module functionality. The analysis covers all entities: Strategy, Perspective, Goal, Initiative, Indicator, and Vision components.
 
-### Status Legend
-- ✅ **Implemented** - Endpoint exists and is functional
-- ⚠️ **Partial** - Basic functionality exists but lacks advanced features
-- ❌ **Missing** - Endpoint does not exist and needs to be implemented
-- 🔵 **Custom Required** - Needs custom controller (not covered by Spring Data REST)
+### Key Findings Summary
+
+| Feature | Status | Impact | Module | Description |
+|---------|--------|--------|--------|-------------|
+| Team Members Management | ❌ Missing | HIGH | Strategy, Perspective, Goal, Initiative, Indicator | CRUD endpoints for team member assignment |
+| Risk Management | ❌ Missing | HIGH | All Modules | Full risk entity and relationship endpoints |
+| Perspective FAT Endpoint | ⚠️ Issue | HIGH | Perspective | Single endpoint returning all nested data needs splitting |
+| Vision Goals | ❌ Missing | HIGH | Vision | Link/unlink goals to vision priorities |
+| Vision Indicators | ❌ Missing | HIGH | Vision | Link/unlink indicators to vision priorities |
+| Initiative Type | ❌ Missing | HIGH | Initiative | Lookup table for initiative types |
+| Initiative Contributors | ❌ Missing | MEDIUM | Initiative | Team contributors separate from owners |
+| Budget Source Lookup | ❌ Missing | HIGH | Cross-Cutting | Reference table for budget sources |
+| Initiative Budget Sources | ❌ Missing | HIGH | Initiative | Track multiple budget sources per initiative |
+| Initiative Payments | ❌ Missing | HIGH | Initiative | Payment tracking and management |
+| Organization Unit Definition | ⚠️ Unclear | MEDIUM | Organization | Clarification needed on org unit structure |
+| Owner Division (UI) | ⚠️ Unclear | MEDIUM | Organization | UI field mapping to backend unclear |
 
 ---
 
