@@ -81,12 +81,10 @@ GET /module-catalog
 http://localhost:36010/api/organization
 ```
 
-## Authentication
-All endpoints require Bearer token in Authorization header.
 
 ---
 
-## 1. Organizations
+## . Organizations
 
 ### 1.1 List All Organizations
 ```
